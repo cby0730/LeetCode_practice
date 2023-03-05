@@ -7,7 +7,7 @@ public:
 
         if ( str_size == 0 ) return 0 ;
 
-        for ( i = 0 ; i < str_size ; i ++ ) {
+        for ( i = 0 ; i < str_size ; i ++ ) { // using slide window
 
             if (find(LS.begin(), LS.end(), s[i]) != LS.end()) {
                 while(LS[0] != s[i]){
